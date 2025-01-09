@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #8ab4f8; /* Light blue for header */
+    color: #1a237e; /* Dark blue for text */
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center the nav items */
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #1a237e; /* Dark blue for links */
+    text-decoration: none;
+}
+
+/* Main Styles */
+main {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #1a237e; /* Dark blue for section title */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #b0bec5; /* Light gray border */
+}
+
+th {
+    background-color: #90caf9; /* Light blue for header */
+    color: #1a237e; /* Dark blue for header text */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #8ab4f8; /* Light blue for footer */
+    color: #1a237e; /* Dark blue for text */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: #1a237e; /* Dark blue for footer links */
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

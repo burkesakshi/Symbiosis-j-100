@@ -1,0 +1,52 @@
+<header>
+  <div class="container">
+      <h1>Art Marketplace</h1>
+      <nav>
+          <ul>
+              <li><a routerLink="/gallery">Shop</a></li>
+              <li><a routerLink="/mycart">My Cart</a></li>
+              <li><a routerLink="/myorders">My Orders</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+      <h2>My Orders</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Order ID</th>
+                  <th>Item</th>
+                  <th>Artist</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                  <th>Date</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let order of orders">
+                  <td>{{ order.id }}</td>
+                  <td>{{ order.item }}</td>
+                  <td>{{ order.artist }}</td>
+                  <td>{{ order.status }}</td>
+                  <td>Rs {{ order.total.toFixed(2) }}</td>
+                  <td>{{ order.date }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+      <nav>
+          <ul>
+              <li><a routerLink="/aboutus">About Us</a></li>
+              <li><a routerLink="/contactus">Contact Us</a></li>
+              <li><a routerLink="/feedback">Feedback</a></li>
+          </ul>
+      </nav>
+  </div>
+</footer>

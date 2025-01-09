@@ -1,0 +1,114 @@
+/* cart.component.css */
+.header {
+  background-color: #8ab4f8; /* Light blue for header */
+  color: #1a237e; /* Dark blue for text */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Space between links */
+  align-items: center; /* Center items vertically */
+}
+
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  color: #1a237e; /* Dark blue for links */
+  text-decoration: none;
+}
+
+.header .back-link {
+  color: #1a237e; /* Dark blue for back link */
+  text-decoration: none;
+}
+
+/* Cart Styles */
+.cart {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #6fa1e0; /* Light blue border */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for cart */
+}
+
+h1 {
+  text-align: center;
+  color: #1a237e; /* Dark blue for heading */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #b0bec5; /* Light gray border */
+}
+
+button {
+  background-color: #90caf9; /* Light blue for button */
+  color: #1a237e; /* Dark blue for button text */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for button */
+}
+
+button:hover {
+  background-color: #64b5f6; /* Slightly darker blue on hover */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #8ab4f8; /* Light blue for footer */
+  color: #1a237e; /* Dark blue for text */
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer ul li a {
+  color: #1a237e; /* Dark blue for footer links */
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.order-button {
+  background-color: #42a5f5; /* Light blue for button */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #2196f3; /* Darker blue on hover */
+}

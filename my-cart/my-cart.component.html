@@ -1,0 +1,35 @@
+<div class="header">
+  <nav>
+      <ul>
+          <li><a routerLink="/buyerdashboard">Back</a></li>
+          <li><a routerLink="/gallery">Shop</a></li>
+      </ul>
+  </nav>
+</div>
+
+<div class="cart">
+  <h1>My Cart</h1>
+  <div *ngIf="cartItems.length === 0">
+      <p>Your cart is currently empty.</p>
+  </div>
+  <div *ngIf="cartItems.length > 0">
+      <ul>
+          <li *ngFor="let item of cartItems">
+              {{ item.name }} - Rs {{ item.price }}
+              <button (click)="removeFromCart(item)">Remove</button>
+          </li>
+      </ul>
+      <h3>Total: Rs {{ totalPrice() }}</h3>
+      <button routerLink="/under-development" class="order-button" [disabled]="cartItems.length === 0">Order</button>
+  </div>
+</div>
+
+<div class="footer">
+  <footer>
+      <ul>
+          <li><a routerLink="/aboutus">About Us</a></li>
+          <li><a routerLink="/myorders">Order</a></li>
+          <li><a routerLink="/contactus">Contact Us</a></li>
+      </ul>
+  </footer>
+</div>
